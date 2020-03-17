@@ -73,10 +73,6 @@ public class BankAccount {
         return transactions;
     }
 
-    public void setTransactions(ArrayList<String> transactions) {
-        transactions = this.transactions;
-    }
-
     public void deposit(int amount) {       
         this.amount += amount;
         transactions.add("Deposit: " +amount);
