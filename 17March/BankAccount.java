@@ -8,7 +8,7 @@ public class BankAccount {
     private double amount;
     private String name;
     private boolean active;
-    private ArrayList<String> transactions = new ArrayList();
+    private ArrayList<String> transactions 
     
     private static int accountsOpened;
     
@@ -16,6 +16,7 @@ public class BankAccount {
     public BankAccount(){
         accountsOpened++;
         transactions.add("Account created");
+        this.transactions== new ArrayList();
     }
     
     public BankAccount(String name,int number ){
